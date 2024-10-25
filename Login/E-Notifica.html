@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>E-Notifica</title>
+</head>
+
+<body>
+
+  <div id="imagem-fundo">
+    <div id="centro">
+      <div id="caixa">
+        <div id="imagem-logo">
+          <img id=logo src="https://jacad.uniamerica.br/academico/assets/img/org/logos/logo_uniamerica_portais.png"
+            alt="">
+        </div>
+      </div>
+      <h2 id="login">Login - E-Notifica</h2>
+      <form id="formulario">
+        <input type="text" id="ra" placeholder="Informe seu RA ou E-mail ou CPF">
+        <input type="password" id="senha" placeholder="Informe a sua senha">
+        <input type="button" id="acessar" value="Acessar" onclick="confirmar()">
+        <input type="button" id="esqueciSenha" value="Esqueci minha senha">
+      </form>
+      <footer>
+        <div id="footer-left">
+            <label id="acesso">Acesso para responsáveis</label>
+            <label id="reg">Caso seja de fora se registre aqui</label>
+        </div>
+        <div id="footer-right">
+            <input type="submit" id="acessoResponsavel" value="Acessar como">
+            <input type="submit" id="registrar" value="Registrar-se">
+        </div>
+    </footer>
+    </div>
+  </div>
+
+  <p id="mensagem"></p>
+
+  <script src="E-Notifica.js" defer></script>
+</body>
+
+</html>
