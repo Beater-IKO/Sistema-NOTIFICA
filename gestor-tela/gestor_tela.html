@@ -65,15 +65,34 @@
     </div>
     <div id="espaco-direita"> <!-- espaço a direita das opções de ticket--> 
        <div id="espaco-c">
+
             <div id="ordem-de-chegada"> 
                 <p>Ordem de Chegada</p>
                 <div id="mudar-ordem-de-chegada"><!--ESTÁ DIV É PARA PODER ALINHAR AS DUAS IMAGENS NA VERTICAL -->
-                    <img src="imagens/triangulo.webp" alt="" width="20px" height="20px" >
-                    <img src="imagens/triangulo-ao-contrario.png" alt="" width="16px" height="16px">
+                    <img src="imagens/triangulo.webp" alt="" width="20px" height="25px" style="margin-top: 12px;" >
                 </div>
             </div>
-            <div id="ordem-de-prioridade">Ordem de Prioridade </div>
-            <div id="area-da-faculdade">Área da faculdade  </div>
+
+            <div id="ordem-de-prioridade">
+                Ordem de Prioridade
+                <select name="gravidade" style=" width: 100px;">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="leve">leve</option>
+                    <option value="mediana">mediana</option>
+                    <option value="grave">grave</option>
+                    <option value="urgência">urgência</option>
+                </select>
+            </div>
+
+            <div id="area-da-faculdade">
+                Área da faculdade 
+                <select name="area_da_faculdade" style=" width: 100px;">
+                    <option value="" selected disabled>Selecione uma opção</option>
+                    <option value="leve">Interna</option>
+                    <option value="mediana">Externa</option>
+                </select>
+            </div>
+
             <div id="resetar-filtros">Resetar Filtros </div>
        </div>
        
