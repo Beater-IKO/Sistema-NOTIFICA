@@ -1,5 +1,8 @@
 
 /*Logo*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 #logo{
     display: flex;
     width: 250px;
@@ -54,12 +57,34 @@ body::before{
 }
 #espaco-direita{
     display: flex;
+    flex-direction: column;
 
 }
 
-#sla {
-    background-color: aqua;
+#espaco-c {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 76vw;
+    height: 7vw;
+    margin-top: 42px;
+    margin-left: 20px;
+    font-weight: bold;
     
+}
+
+#ordem-de-chegada {
+    display: flex;
+    justify-content: space-between;
+
+}
+#mudar-ordem-de-chegada{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /*Espaço em branco da direita*/
@@ -69,10 +94,11 @@ body::before{
     background-color: white;
     border-radius: 20px;
     width: 76vw;
-    height: 50vw;
+    height: 42vw;
     margin-top: 10%;
     margin-left: 20px;
     justify-content: center;
+    margin-top: 20px;
 
 
 }
