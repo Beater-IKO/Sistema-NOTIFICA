@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+#logo {
+  width: 200px;
+  height: 75px;
+}
+
 #imagem-fundo {
   background-image: url(/E-Notifica/Imagens/uniamerica.jpg);
   background-size: cover;
-  height: 700px;
+  height: 633px;
   width: 100%; /* Alterado para ocupar a largura total da tela */
   background-position: center;
 }
@@ -19,7 +24,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 700px;
+  height: 633px;
   background-color: rgba(0, 247, 41, 0.5);
   z-index: 1;
 }
@@ -27,7 +32,7 @@
 #centro {
   z-index: 2;
   position: relative;
-  padding-top: 150px;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,9 +86,9 @@
   width: 100%;
   margin-bottom: 10px; 
   padding: 7px;
-  border-radius: 3pt;
-  text-align: center;
 }
+
+
 
 input#acessar {
     color: white;
@@ -132,6 +137,10 @@ footer label {
   text-align: left;
 }
 
+#acessar {
+  border: 0;
+}
+
 #acesso {
   padding-bottom: 7pt;
 }
@@ -146,4 +155,5 @@ footer label {
   width: auto;
   padding: 5px 10px;
   margin: 5px 0;
+  font-weight: bold;
 }

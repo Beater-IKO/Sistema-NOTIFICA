@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 200px;
+    height: 75px;
+}
+
+#imagem-fundo {
+    background-image: url(uniamerica.jpg);
+    background-size: cover;
+    height: 633px;
+    width: 100%;
+    /* Alterado para ocupar a largura total da tela */
+    background-position: center;
+}
+
+#imagem-fundo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 633px;
+    background-color: rgba(0, 247, 41, 0.5);
+    z-index: 1;
+}
+
+#centro {
+    z-index: 2;
+    position: relative;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem-logo {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+
+#caixa {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background: #d5d5d5;
+    border: 1pt solid black;
+    border-top-left-radius: 5pt;
+    border-top-right-radius: 5pt;
+    border-bottom-left-radius: 2pt;
+    border-bottom-right-radius: 2pt;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background: white;
+    border-left: 1pt solid black;
+    border-right: 1pt solid black;
+    text-align: center;
+    padding-top: 10pt;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    border-width: 0 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 10pt;
+}
+
+#nome, #sobrenome, #E-mail, #CPF, #Tel, #senha, #repSenha {
+    padding-left: 10px;
+} 
+
+#formulario input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: #D9D9D9;
+    border: 0;
+}
+
+input#acessar {
+    color: white;
+    background-color: #0DB007;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+input#esqueciSenha {
+    color: #006AFF;
+    border: 1pt solid;
+    border-color: #006AFF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-left-radius: 5pt;
+    border-bottom-right-radius: 5pt;
+    padding-bottom: 10pt;
+}
+
+#footer-left {
+    display: flex;
+    flex-direction: column;
+    color: #006AFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+footer label {
+    text-align: left;
+}
+
+#acesso {
+    padding-bottom: 7pt;
+}
+
+#reg {
+    padding-top: 3pt;
+    padding-right: 10pt;
+}
+
+#acessoResponsavel,
+#registrar {
+    width: auto;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-weight: bold;
+}
