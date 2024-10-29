@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>E-Notifica</title>
+</head>
+
+<body>
+
+  <div id="imagem-fundo">
+    <div id="centro">
+      <div id="caixa">
+        <div id="imagem-logo">
+          <img id=logo src="logo-dua.png"
+            alt="">
+        </div>
+      </div>
+      <h2 id="login">Registrar - E-Notifica</h2>
+      <form id="formulario">
+        <input type="text" id="nome" placeholder="Informe o seu nome">
+        <input type="text" id="sobrenome" placeholder="Informe seu sobrenome">
+        <input type="text" id="E-mail" placeholder="Informe seu E-MAIL">
+        <input type="text" id="CPF" placeholder="Informe o seu CPF">
+        <input type="tel" id="Tel" placeholder="Número de telefone">
+        <input type="password" id="senha" placeholder="Informe sua SENHA">
+        <input type="password" id="repSenha" placeholder="Repita sua Senha">
+        <input type="button" id="acessar" value="Acessar" onclick="confirmar()">
+        <input type="button" id="esqueciSenha" value="Esqueci minha senha">
+      </form>
+      <footer>
+        <div id="footer-left">
+            <label id="acesso">Acesso para responsáveis</label>
+            <label id="reg">Caso tenha conta clique aqui</label>
+        </div>
+        <div id="footer-right">
+            <input type="submit" id="acessoResponsavel" value="Acessar como">
+            <input type="submit" id="registrar" value="Voltar">
+        </div>
+    </footer>
+    </div>
+  </div>
+
+  <p id="mensagem"></p>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
