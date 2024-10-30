@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Tela-Registro.css">
   <title>E-Notifica</title>
 </head>
 
@@ -14,38 +14,64 @@
     <div id="centro">
       <div id="caixa">
         <div id="imagem-logo">
-          <img id=logo src="logo-dua.png"
-            alt="">
+          <img id=logo src="Imagens/logo-dua.png" alt="">
         </div>
       </div>
       <h2 id="login">Registrar - E-Notifica</h2>
-      <form id="formulario">
-        <input type="text" id="nome" placeholder="Informe o seu nome">
-        <input type="text" id="sobrenome" placeholder="Informe seu sobrenome">
-        <input type="text" id="E-mail" placeholder="Informe seu E-MAIL">
-        <input type="text" id="CPF" placeholder="Informe o seu CPF">
-        <input type="tel" id="Tel" placeholder="Número de telefone">
-        <input type="password" id="senha" placeholder="Informe sua SENHA">
-        <input type="password" id="repSenha" placeholder="Repita sua Senha">
+      <div id="formulario">
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Person icon.png" alt="">
+          <input type="text" id="nome" placeholder="Informe o seu nome" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Person icon.png" alt="">
+          <input type="text" id="sobrenome" placeholder="Informe seu sobrenome" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/E-mail icon.png" alt="">
+          <input type="email" id="E-mail" placeholder="Informe seu E-MAIL" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Cpf icon.png" alt="">
+          <input type="text" id="CPF" placeholder="Informe o seu CPF" maxlength="14" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Telefone icon.png" alt="">
+          <input type="tel" id="Tel" placeholder="Número de telefone" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Cadeado icon.png" alt="">
+          <input type="password" id="senha" placeholder="Informe sua SENHA" required>
+        </div>
+
+        <div class="input-content">
+          <img class="icon" src="Imagens/Cadeado icon.png" alt="">
+          <input type="password" id="repSenha" placeholder="Repita sua Senha" required>
+        </div>
+
         <input type="button" id="acessar" value="Acessar" onclick="confirmar()">
         <input type="button" id="esqueciSenha" value="Esqueci minha senha">
-      </form>
+      </div>
       <footer>
         <div id="footer-left">
-            <label id="acesso">Acesso para responsáveis</label>
-            <label id="reg">Caso tenha conta clique aqui</label>
+          <label id="acesso">Acesso para responsáveis</label>
+          <label id="reg">Caso tenha conta clique aqui</label>
         </div>
         <div id="footer-right">
-            <input type="submit" id="acessoResponsavel" value="Acessar como">
-            <input type="submit" id="registrar" value="Voltar">
+          <input type="submit" id="acessoResponsavel" value="Acessar como">
+          <input type="submit" id="voltar" value="Voltar">
         </div>
-    </footer>
+      </footer>
     </div>
   </div>
 
-  <p id="mensagem"></p>
-
-  <script src="script.js" defer></script>
+  <script src="Tela-Registro.js" defer></script>
 </body>
 
 </html>

@@ -33,7 +33,7 @@
 #centro {
     z-index: 2;
     position: relative;
-    padding-top: 50px;
+    padding-top: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;

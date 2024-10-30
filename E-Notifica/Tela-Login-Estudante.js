@@ -4,5 +4,9 @@ function confirmar () {
 }
 
 document.getElementById('acessar').addEventListener("click",function(){
-  window.location.href = "Tela-Principal.html"
+  window.location.href = "Tela-Principal.html";
+})
+
+document.getElementById('registrar').addEventListener("click",function(){
+  window.location.href = "Tela-Registro.html";
 })
