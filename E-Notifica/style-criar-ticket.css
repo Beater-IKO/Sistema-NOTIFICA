@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*Logo*/
+#logo {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    z-index: 2;
+
+}
+
+
+/*Plano de fundo*/
+body {
+    background: url(Imagens/uniamerica.jpg) no-repeat right top fixed;
+
+
+}
+
+/*Isso serve pra deixar a mascara verde*/
+body::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(42, 254, 130, 0.5);
+    z-index: 1;
+    height: 140%;
+
+}
+
+/* E isso aqui é pra deixar o espaço-A do la do espaço-B*/
+#container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    z-index: 2;
+    position: relative;
+}
+
+/*Espaço em branco da esquerda*/
+#espaço-A {
+    display: flex;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 780px;
+    margin-top: 3%;
+
+
+}
+
+/*Espaço em branco da direita*/
+#espaço-B {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 1120px;
+    height: auto;
+    height: 780px;
+    margin-top: 3%;
+    margin-left: 20px;
+    justify-content: center;
+    justify-content: flex-start;
+
+}
+
+
+#coluna-selecao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px 10px 10px;
+
+}
+
+
+#criar-ticket,
+#tickets-finalizados,
+#ticket-em-andamento,
+#historicos-de-tickets {
+
+    margin-top: 50px;
+    border: 4px solid rgba(0, 0, 0, 0.504);
+    border-radius: 20px;
+    height: 70px;
+    font-weight: bolder;
+    width: 260px;
+    font-size: 25px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+#criar-ticket {
+    height: 90px;
+}
+
+#icone-suporte {
+    display: flex;
+    margin-top: 160px;
+    margin-left: 10px;
+    align-items: flex-start;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#texto-problema {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+    color: #948A8A;
+    font-size: 20px;
+    width: 1107px;
+    height: 60px;
+    background-color: rgb(233, 230, 230);
+}
+
+
+#texto-problema-detalhes {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 7px;
+    color: #948A8A;
+    font-size: 20px;
+    width: 1107px;
+    height: 60px;
+    background-color: rgb(233, 230, 230);
+    margin-top: 110px;
+    height: 335px;
+
+}
+
+#enviar {
+    background-color: rgb(36, 126, 245);
+    color: white;
+    height: 40px;
+    width: 95px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+#interacao {
+    display: flex;
+    background-color: rgb(233, 230, 230);
+    height: 60px;
+    width: 1121px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+
+
+}
+
+
+
+
+#filtrar-opcoes {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#selecione-sala,
+#area-faculdade,
+#selecione-andar,
+#grau-prioridade {
+
+    background-color: rgb(233, 230, 230);
+    font-size: large;
+    border-radius: 50px;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    font-weight: bolder;
+
+
+}
+
+#opcoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: large;
+    margin-left: 70px;
+
+}
+
+#salas {
+    width: 90px;
+    height: 30px;
+}
+
+
+
+
+
+#interna,
+#externa {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+#interna {
+    margin-left: 113px;
+}
+
+
+
+
+
+
+#andar-faculdade2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#andar1,
+#andar2,
+#andar3,
+#andar4 {
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+
+    background-color: rgb(192, 25, 248);
+}
+
+#andar1,
+#andar2 {
+    margin-left: 20px;
+}
+
+#andar2,
+#andar4 {
+    margin-top: 20px;
+
+}
+
+
+
+#prioridade-grau-2 {
+
+    display: flex;
+    text-align: center;
+
+}
+
+
+#grau-leve,
+#grau-mediana,
+#grau-grave,
+#grau-urgencia {
+
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px;
+
+
+}
+
+#grau-leve {
+    background-color: greenyellow;
+    margin-left: 20px;
+}
+
+#grau-mediana {
+    background-color: rgb(252, 252, 82);
+}
+
+#grau-grave {
+    background-color: rgb(252, 110, 59);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#grau-urgencia {
+    background-color: rgb(248, 64, 64);
+    margin-top: 20px;
+}
