@@ -30,7 +30,7 @@ body::before{
     bottom: 0;
     background-color: rgb(42, 254, 130, 0.5);
     z-index: 1;
-    height: 120%;
+    height: 140%;
 
 }
 /* E isso aqui é pra deixar o espaço-A do la do espaço-B*/
@@ -88,6 +88,44 @@ body::before{
 
 #ordem-de-prioridade{
     display: flex;
+}
+
+#resetar-filtros {
+    display: flex;
+}
+
+#area-da-faculdade{
+    display: flex;
+}
+
+select {
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    appearance: none; /* Remove o estilo padrão */
+    webkit-appearance: none;
+    moz-appearance: none;
+    cursor: pointer;
+}
+
+/* Ajustes para o contêiner do select */
+select:focus {
+    border-color: #000000; /* Cor de destaque ao focar */
+    outline: none;
+    background-color: #d2d2d2;
+}
+
+#tickets{
+    display: flex;
+    align-items: center;
+    background-color: rgb(187, 183, 183);
+    height: 50px;
 }
 
 /*Espaço em branco da direita*/
