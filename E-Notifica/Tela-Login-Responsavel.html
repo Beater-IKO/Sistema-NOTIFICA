@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Tela-Login-Estudante.css">
+  <link rel="stylesheet" href="Tela-Login-Responsavel.css">
   <title>E-Notifica</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div id="centro">
       <div id="caixa">
         <div id="imagem-logo">
-          <img id=logo src="/E-Notifica/Imagens/logo-dua.png"
+          <img id=logo src="Imagens/logo-dua.png"
             alt="">
         </div>
       </div>
@@ -23,14 +23,19 @@
         
         <div class="input-content">
           <img class="icon" src="Imagens/Person icon.png" alt="">
-          <input type="text" id="ra" placeholder="Informe seu RA ou E-mail ou CPF">
-      </div>
-
+          <input type="text" id="usuariojacad" placeholder="Informe o usuário SWAJACAD">
+        </div>
+        
         <div class="input-content">
           <img class="icon" src="Imagens/Cadeado icon.png" alt="">
           <input type="password" id="senha" placeholder="Informe a sua senha">
-      </div>
+        </div>
         
+        <div class="input-content">
+          <img src="Imagens/Formatura_icon-removebg-preview.png" alt="" class="icon">
+          <input type="text" id="ra" placeholder="Ra do Aluno">
+      </div>
+
         <input type="button" id="acessar" value="Acessar" onclick="confirmar()">
         <input type="button" id="esqueciSenha" value="Esqueci minha senha">
       </div>
@@ -40,7 +45,7 @@
             <label id="reg">Caso seja de fora se registre aqui</label>
         </div>
         <div id="footer-right">
-            <input type="submit" id="acessoResponsavel" value="Acessar como">
+            <input type="submit" id="voltar" value="Voltar">
             <input type="submit" id="registrar" value="Registrar-se" >
         </div>
     </footer>
@@ -48,7 +53,8 @@
   </div>
 
 
-  <script src="Tela-Login-Estudante.js" defer></script>
+
+  <script src="Tela-Login-Responsavel.js" defer></script>
 </body>
 
 </html>
