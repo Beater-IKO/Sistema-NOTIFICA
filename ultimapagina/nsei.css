@@ -1,8 +1,5 @@
 
 /*Logo*/
-*{
-    font-family: Arial, Helvetica, sans-serif;
-}
 #logo{
     display: flex;
     width: 250px;
@@ -14,7 +11,7 @@
 
 /*Plano de fundo*/
 body{
-    background: url(imagens/uniamerica.jpg) no-repeat right top fixed; 
+    background: url(Imagens/uniamerica.jpg) no-repeat right top fixed; 
     
 
 }   
@@ -30,7 +27,7 @@ body::before{
     bottom: 0;
     background-color: rgb(42, 254, 130, 0.5);
     z-index: 1;
-    height: 140%;
+    height: 120%;
 
 }
 /* E isso aqui é pra deixar o espaço-A do la do espaço-B*/
@@ -48,84 +45,12 @@ body::before{
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    width: 300px;    
-    height: 780px;
+    width: 20vw;
+    height: 40vw;
     margin-top: 3%;  
     text-align: center;
     
   
-}
-#espaco-direita{
-    display: flex;
-    flex-direction: column;
-
-}
-
-#espaco-c {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: white;
-    border-radius: 20px;
-    width: 76vw;
-    height: 7vw;
-    margin-top: 42px;
-    margin-left: 20px;
-    font-weight: bold;
-    
-}
-
-#ordem-de-chegada {
-    display: flex;
-
-}
-#mudar-ordem-de-chegada{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-#ordem-de-prioridade{
-    display: flex;
-}
-
-#resetar-filtros {
-    display: flex;
-}
-
-#area-da-faculdade{
-    display: flex;
-}
-
-select {
-    margin-top: 10px;
-    margin-left: 5px;
-    width: 120px;
-    height: 30px;
-    font-size: 14px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    color: #333;
-    appearance: none; /* Remove o estilo padrão */
-    webkit-appearance: none;
-    moz-appearance: none;
-    cursor: pointer;
-}
-
-/* Ajustes para o contêiner do select */
-select:focus {
-    border-color: #000000; /* Cor de destaque ao focar */
-    outline: none;
-    background-color: #d2d2d2;
-}
-
-#tickets{
-    display: flex;
-    align-items: center;
-    background-color: rgb(187, 183, 183);
-    height: 50px;
 }
 
 /*Espaço em branco da direita*/
@@ -134,12 +59,11 @@ select:focus {
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    width: 1140px;
-    height: 660px;
-    margin-top: 10%;
+    width: 76vw;
+    height: 40vw;
+    margin-top: 3%;
     margin-left: 20px;
     justify-content: center;
-    margin-top: 20px;
 
 
 }
@@ -220,32 +144,12 @@ select:focus {
 
 }
 
-#verificar-protocolos{
-    margin-top:3vw;
-    display: flex;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 4px solid rgba(0, 0, 0, 0.504);
-
-}
-
-
-
 
 #icone-suporte{
     display: flex;
     width: 20px;
     height: 50px;
-    margin-top: 120px;
+    margin-top: 60px;
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
