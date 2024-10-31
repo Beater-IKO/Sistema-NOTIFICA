@@ -247,13 +247,21 @@ body::before {
     cursor: pointer;
     padding: 10px;
     text-align: center;
-
+    transition: transform 0.3s;
+    
 
 }
 
 #interna {
     margin-left: 113px;
+    
 }
+
+#interna.inflada{
+    transform: scale(1.1,1.1);
+    background-color: yellow;
+}
+
 
 
 
