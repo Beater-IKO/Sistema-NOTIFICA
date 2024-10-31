@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Varela Round", sans-serif;
+}
+
+body {
+    z-index: 2;
+    position: relative;
+}
+
+#ImagemFundo {
+    background-image: url(Imagens/uniamerica.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#ImagemFundo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 247, 41, 0.5);
+    z-index: 1;
+}
+
+header {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+img {
+
+}
+
+#cima {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+#sla {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+#menuimg {
+    margin-top: 25px;
+    border: 5px;
+    height: 30px;
+    width: 40px;
+    float: left;
+}
+
+#menu {
+    display: none;
+    /* Oculta o menu inicialmente */
+    position: absolute;
+    margin: 0px;
+    background-color: #8a0cff;
+    color: cyan;
+    margin-top: 80px;
+    height: 70px;
+    width: 300px;
+}
+
+#menu-button {
+    cursor: pointer;
+    margin-left: 40px;
+    position: absolute;
+    height: 80px;
+    width: 70px;
+    left: 0px;
+    background-color: black;
+    color: cyan;
+    border: 0px;
+    font-weight: 800;
+    font-size: large;
+}
+
+#menu.open {
+    display: block;
+    /* Exibe o menu quando a classe "open" é adicionada */
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#suporteMenu {
+    background-color: #8a0cff00;
+    border: 0px;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#corpo {
+    background-color: #20055300;
+    width: 100%;
+    min-width: 300px;
+    max-width: 100%;
+    margin: auto;
+    width: 1000px;
+    z-index: 2;
+    position: relative;
+}
+
+#suporte {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 2;
+    position: relative;
+    ;
+}
+
+#img-suporte {
+    width: 80px;
+    height: 40px;
+}
+
+#Nome {
+    position: flex;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-bottom: 10px;
+    height: 50px;
+}
+
+#Nome h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#caixa {
+    display: flex;
+    background: rgba(0, 0, 0, 0.226);
+    width: 1000px;
+    height: 520px;
+    margin: 10pt;
+}
+
+#seletor {
+    margin-top: 2pt;
+    margin-left: 2pt;
+    width: 360px;
+    text-align: center;
+}
+
+#infoproblema,
+#problema {
+    display: flex;
+}
+
+#infoproblema {
+    margin: 10pt;
+    justify-content: start;
+}
+
+#problema {
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: Arial;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 270px;
+    min-width: 950px;
+    margin: 10pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    justify-content: start;
+}
+
+option {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+span {
+    color: white;
+    padding-top: 5pt;
+}
+
+form {
+    padding-top: 10pt;
+}
+
+label {
+    padding: 10pt;
+    color: white;
+}
+
+
+#anexar-arquivo {
+    display: flex;
+    justify-content: start;
+    height: 30px;
+    width: 125px;
+    margin-left: 13pt;
+}
+
+#botao-arquivo {
+    padding: 3pt;
+    width: 110px;
+}
+
+#botao {
+    display: flex;
+    justify-content: end;
+    height: 35px;
+    width: 965px;
+    margin-left: 13pt;
+}
+
+#butaoEnviar {
+    padding: 3pt;
+    width: 75px;
+}
