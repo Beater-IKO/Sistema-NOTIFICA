@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+
+
 #logo {
   width: 200px;
   height: 75px;
@@ -33,10 +35,14 @@
 #centro {
   z-index: 2;
   position: relative;
-  padding-top: 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center
+;
+
+ 
 }
 
 #imagem-logo {
@@ -99,10 +105,16 @@ input#acessar {
   color: white;
   background-color: #0DB007;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 380px;
   font-size: 12pt;
 }
 
+input#acessar:hover {
+  background-color: #086605;
+}
+
 input#esqueciSenha {
+  width: 380px;
   color: #006AFF;
   border: 1pt solid;
   border-color: #006AFF;
@@ -161,8 +173,6 @@ footer label {
 }
 
 .icon {
-  display: flex;
-  align-items: center;
   width: 20pt;
   height: 22pt;
   background-color: rgba(128, 128, 128, 0.575);
@@ -171,4 +181,8 @@ footer label {
 .input-content {
   display: flex;
   width: 380px;
+}
+
+input {
+  cursor:pointer;
 }
