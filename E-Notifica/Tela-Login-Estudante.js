@@ -10,3 +10,7 @@ document.getElementById('acessar').addEventListener("click",function(){
 document.getElementById('registrar').addEventListener("click",function(){
   window.location.href = "Tela-Registro.html";
 })
+
+document.getElementById('acessoResponsavel').addEventListener("click",function(){
+  window.location.href = "Tela-Login-Responsavel.html"
+})
