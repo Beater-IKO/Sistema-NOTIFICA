@@ -55,7 +55,7 @@ body::before {
     background-color: white;
     border-radius: 20px;
     width: 300px;
-    height: 780px;
+    height: 705px;
     margin-top: 3%;
 
 
@@ -70,7 +70,7 @@ body::before {
     border-radius: 20px;
     width: 1120px;
     height: auto;
-    height: 780px;
+    height: 705px;
     margin-top: 3%;
     margin-left: 20px;
     justify-content: center;
@@ -108,13 +108,21 @@ body::before {
 
 }
 
+#criar-ticket:hover,
+#tickets-finalizados:hover,
+#ticket-em-andamento:hover,
+#historicos-de-tickets:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+
 #criar-ticket {
     height: 90px;
 }
 
 #icone-suporte {
     display: flex;
-    margin-top: 160px;
+    margin-top: 110px;
     margin-left: 10px;
     align-items: flex-start;
     font-weight: bolder;
@@ -144,12 +152,12 @@ body::before {
     border-bottom-right-radius: 0px;
     padding: 7px;
     color: #948A8A;
-    font-size: 20px;
+    font-size: 30px;
     width: 1107px;
-    height: 60px;
+
     background-color: rgb(233, 230, 230);
     margin-top: 110px;
-    height: 335px;
+    height: 253px;
 
 }
 
@@ -163,18 +171,21 @@ body::before {
     border-radius: 10px;
     cursor: pointer;
     margin-left: 10px;
+    margin-right: 550px;
+
 
 }
+
 
 #interacao {
     display: flex;
     background-color: rgb(233, 230, 230);
-    height: 60px;
+    height: 65px;
     width: 1121px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     align-items: center;
-
+    gap: 70px;
 
 }
 
@@ -301,7 +312,7 @@ body::before {
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    text-align: right;
+    text-align: center;
     padding: 10px;
 
 
@@ -325,4 +336,14 @@ body::before {
 #grau-urgencia {
     background-color: rgb(248, 64, 64);
     margin-top: 20px;
+}
+
+
+#microfone-icone,
+#google-assistente,
+#galeria-de-fotos {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
 }

@@ -1,3 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
 /*Logo*/
 #logo {
     display: flex;
@@ -46,16 +55,14 @@ a {
     position: relative;
 }
 
-/*Espaço em branco da esquerda*/
 #espaço-A {
     display: flex;
     display: inline-block;
     background-color: white;
     border-radius: 20px;
-    width: 20vw;
-    height: 40vw;
+    width: 300px;
+    height: 705px;
     margin-top: 3%;
-    text-align: center;
 
 
 }
@@ -64,101 +71,70 @@ a {
 #espaço-B {
     display: flex;
     display: inline-block;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    width: 76vw;
-    height: 40vw;
+    width: 1120px;
+    height: auto;
+    height: 705px;
     margin-top: 3%;
     margin-left: 20px;
-    justify-content: center;
+
+
 
 
 }
 
-
-#criar-ticket {
-    margin-top: 3vw;
+#coluna-selecao {
     display: flex;
-    list-style-type: none;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 2px 60px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 4px solid rgba(0, 0, 0, 0.504);
-
-}
-
-#ticket-em-andamento {
-    margin-top: 3vw;
-    display: flex;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px 2px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 4px solid rgba(0, 0, 0, 0.504);
-}
-
-
-
-#tickets-finalizados {
-    margin-top: 3vw;
-    display: flex;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px 25px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1vw;
-    cursor: pointer;
-    border: 4px solid rgba(0, 0, 0, 0.504);
+    flex-direction: column;
+    gap: 10px 10px 10px 10px;
 
 }
 
 
-
+#criar-ticket,
+#tickets-finalizados,
+#ticket-em-andamento,
 #historicos-de-tickets {
-    margin-top: 3vw;
-    display: flex;
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    padding: 20px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 19px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 1vw;
-    cursor: pointer;
+
+    margin-top: 50px;
     border: 4px solid rgba(0, 0, 0, 0.504);
+    border-radius: 20px;
+    height: 70px;
+    font-weight: bolder;
+    width: 260px;
+    font-size: 25px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+
 
 }
+
+#criar-ticket:hover,
+#tickets-finalizados:hover,
+#ticket-em-andamento:hover,
+#historicos-de-tickets:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+
 
 
 #icone-suporte {
     display: flex;
-    width: 20px;
-    height: 50px;
-    margin-top: 60px;
-    margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 110px;
+    margin-left: 10px;
+    align-items: flex-start;
+    font-weight: bolder;
     cursor: pointer;
+}
+
+#ticket-nao-encontrado {
+    display: flex;
+    justify-content: center;
+    margin-top: 325px
 }
