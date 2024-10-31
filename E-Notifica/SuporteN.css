@@ -49,6 +49,7 @@ img {
 }
 
 #sla {
+    background-color: black;
     color: white;
     width: 100%;
     display: flex;
@@ -57,6 +58,7 @@ img {
     align-items: center;
     z-index: 2;
     position: relative;
+    height: 100px;
 }
 
 #menuimg {
