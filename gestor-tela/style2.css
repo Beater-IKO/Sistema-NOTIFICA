@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*Logo*/
+#logo {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+
+/*Plano de fundo*/
+body {
+    background: url(imagens/uniamerica.jpg) no-repeat right top fixed;
+
+
+}
+
+/*Isso serve pra deixar a mascara verde*/
+body::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(42, 254, 130, 0.5);
+    z-index: 1;
+    height: 140%;
+
+}
+
+/* E isso aqui é pra deixar o espaço-A do la do espaço-B*/
+#container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    z-index: 2;
+    position: relative;
+}
+
+/*Espaço em branco da esquerda*/
+#espaço-A {
+    display: flex;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 705px;
+    margin-top: 3%;
+
+
+}
+
+/*Espaço em branco da direita*/
+#espaço-B {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 1120px;
+    height: auto;
+    height: 705px;
+    margin-top: 3%;
+    margin-left: 20px;
+    justify-content: center;
+    justify-content: flex-start;
+
+}
+
+
+#coluna-selecao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px 10px 10px;
+
+}
+
+
+#criar-ticket,
+#tickets-finalizados,
+#ticket-em-andamento,
+#historicos-de-tickets {
+
+    margin-top: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.504);
+    border-radius: 5px;
+    height: 70px;
+    font-weight: bolder;
+    width: 260px;
+    font-size: 15px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
+    background-color: aquamarine;
+
+
+}
+
+#criar-ticket:hover,
+#tickets-finalizados:hover,
+#ticket-em-andamento:hover,
+#historicos-de-tickets:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+
+#criar-ticket {
+    height: 90px;
+}
+
+#icone-suporte {
+    display: flex;
+    margin-top: 110px;
+    margin-left: 10px;
+    align-items: flex-start;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#texto-problema {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    padding: 7px;
+    color: #948a92;
+    font-size: 40px;
+    width: 1107px;
+    height: 60px;
+    background-color: rgb(233, 230, 230);
+}
+
+
+#texto-problema-detalhes {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 7px;
+    color: #948A8A;
+    font-size: 25px;
+    width: 1107px;
+
+    background-color: rgb(233, 230, 230);
+    margin-top: 110px;
+    height: 253px;
+
+}
+
+#enviar {
+    background-color: rgb(36, 126, 245);
+    color: white;
+    height: 40px;
+    width: 95px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 550px;
+
+
+}
+
+
+#interacao {
+    display: flex;
+    background-color: rgb(233, 230, 230);
+    height: 65px;
+    width: 1121px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    gap: 70px;
+
+}
+
+
+
+
+#filtrar-opcoes {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+#selecione-sala,
+#area-faculdade,
+#selecione-andar,
+#grau-prioridade {
+
+    background-color: rgb(233, 230, 230);
+    font-size: large;
+    border-radius: 50px;
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    font-weight: bolder;
+
+
+}
+
+#opcoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    font-size: large;
+    margin-left: 70px;
+
+}
+
+#salas {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+    align-items: center;
+    background-color: gainsboro;
+    color: rgb(141, 4, 141);
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+}
+
+
+
+
+
+#interna,
+#externa {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+
+
+}
+
+#interna {
+    margin-left: 113px;
+
+}
+
+#interna.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: yellow;
+}
+
+#externa.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: yellow;
+}
+
+
+
+
+
+
+
+#andarfaculdade2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#andar1,
+#andar2,
+#andar3,
+#andar4 {
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+
+    background-color: rgb(192, 25, 248);
+}
+
+
+#andar1.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(192, 25, 248);
+}
+
+#andar2.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(192, 25, 248);
+}
+
+
+#andar3.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(192, 25, 248);
+}
+
+#andar4.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(192, 25, 248);
+}
+
+#andar1,
+#andar2 {
+    margin-left: 20px;
+}
+
+#andar2,
+#andar4 {
+    margin-top: 20px;
+
+}
+
+
+
+
+
+#prioridade-grau-2 {
+
+    display: flex;
+    text-align: center;
+
+}
+
+
+#grauleve,
+#graumediana,
+#graugrave,
+#grauurgencia {
+
+    height: 20px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+#grauleve {
+    background-color: greenyellow;
+    margin-left: 20px;
+}
+
+#grauleve.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: greenyellow;
+}
+
+
+
+#graumediana {
+    background-color: rgb(252, 252, 82);
+}
+
+#graumediana.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(252, 252, 82);
+}
+
+#graugrave {
+    background-color: rgb(252, 110, 59);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#graugrave.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(252, 110, 59);
+}
+
+#grauurgencia {
+    background-color: rgb(248, 64, 64);
+    margin-top: 20px;
+}
+
+#grauurgencia.inflada {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(248, 64, 64);
+}
+
+
+#microfone-icone,
+#google-assistente,
+#galeria-de-fotos {
+    display: flex;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}

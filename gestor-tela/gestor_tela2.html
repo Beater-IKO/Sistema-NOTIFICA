@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Tickets</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+
+
+    <header>
+
+        <div id="logo">
+            <img src="imagens/logo-dua.png" alt="" id="logo">
+        </div>
+
+
+
+    </header>
+
+
+
+    <div id=container>
+
+        <div id="espaço-A">
+
+
+            <div id="coluna-selecao">
+
+                <div id="criar-ticket">
+
+                    <p>Agente Responsável - 000000000 <br> Bloco - Limpeza</p>
+
+                </div>
+
+                <div id="ticket-em-andamento">
+
+                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+
+                </div>
+
+                <div id="tickets-finalizados">
+
+                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+
+                </div>
+
+                <div id="historicos-de-tickets">
+
+                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+
+                </div>
+
+
+
+                <div id="icone-suporte">
+
+                    <img src="imagens/Icon-suporte.png" alt="" height="50px" width="50px">
+                    <p>suporte</p>
+
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <div id="espaço-B">
+
+            <textarea placeholder="Piso Quebrado" name="texto-problema" id="texto-problema"></textarea>
+
+
+            <div id="filtrar-opcoes">
+
+                <div id="selecione-sala">
+                    <p>Selecione uma sala</p>
+                </div>
+
+                <div id="area-faculdade">
+                    <p>Área da faculdade</p>
+                </div>
+
+                <div id="selecione-andar">
+                    <p>Selecione o andar</p>
+                </div>
+
+                <div id="grau-prioridade">
+                    <p>GRAU DE PRIORIDADE</p>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+            <section id="opcoes">
+                <div id="salas">
+                    <img src="imagens/sala-de-aula.png" alt="" width="30px" height="30px">
+                    <p> Sala 310</p>
+                </div>
+
+                <div id="interna" onclick="inflar(this)">
+
+                    <p>Interna</p>
+
+                </div>
+
+
+
+                <div id="externa" onclick="inflar(this)">
+
+                    <p>Externa</p>
+                </div>
+
+
+
+
+
+
+                <div id="andarfaculdade2">
+                    <p id="andar1" onclick="inflarAndar(this)">1º Andar</p>
+                    <p id="andar2" onclick="inflarAndar(this)">2º Andar</p>
+                </div>
+
+
+                <div id="andarfaculdade2">
+                    <p id="andar3" onclick="inflarAndar(this)">3º Andar</p>
+                    <p id="andar4" onclick="inflarAndar(this)">4º Andar</p>
+                </div>
+
+
+
+
+                <div id="prioridade-grau1">
+                    <p id="grauleve" onclick="inflarGrau(this)">Leve</p>
+                    <p id="graugrave" onclick="inflarGrau(this)">Grave</p>
+                </div>
+                <div id="prioridade-grau2">
+                    <p id="graumediana" onclick="inflarGrau(this)">Mediana</p>
+                    <p id="grauurgencia" onclick="inflarGrau(this)">Urgência</p>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+            <textarea placeholder="O piso da sala de aula apresenta várias fissuras e buracos, o que tem se tornado um problema constante para os alunos e professores. Essa situação não apenas prejudica a estética do ambiente, mas também representa um risco de acidentes, especialmente para os mais jovens. Durante as aulas, é comum ver crianças desviando dos locais danificados, o que pode distrair a atenção e comprometer o aprendizado. Além disso, a manutenção inadequada do espaço reflete a falta de cuidado com o bem-estar dos estudantes. É essencial que a escola tome medidas para reparar o piso, garantindo um ambiente mais seguro e acolhedor para todos." name="texto-problema-detalhes"
+                id="texto-problema-detalhes"></textarea>
+
+            <div id="interacao">
+                <button type="button" id="enviar">Enviar</button>
+                <img src="Imagens/microfone-icone.png" alt="microfone" height="65px" id="microfone-icone">
+                <img src="Imagens/google-assistente.png" alt="googleassistente" height="65px" id="google-assistente">
+                <img src="Imagens/galeria-de-fotos.png" alt="galeriadefotos" height="65px" id="galeria-de-fotos">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
