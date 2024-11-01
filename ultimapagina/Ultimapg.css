@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/*Logo*/
+#logo {
+    display: flex;
+    width: 250px;
+    height: 100px;
+    z-index: 2;
+
+}
+
+
+/*Plano de fundo*/
+body {
+    background: url(/E-Notifica/Imagens/uniamerica.jpg) no-repeat right top fixed;
+
+}
+
+/*Isso serve pra deixar a mascara verde*/
+body::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(42, 254, 130, 0.5);
+    z-index: 1;
+    height:155vh;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+/* E isso aqui é pra deixar o espaço-A do la do espaço-B*/
+#container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    z-index: 2;
+    position: relative;
+}
+
+#espaço-A {
+    display: flex;
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 705px;
+    margin-top: 3%;
+
+
+}
+
+/*Espaço em branco da direita*/
+#espaço-B {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width: 1120px;
+    height: auto;
+    height: 705px;
+    margin-top: 3%;
+    margin-left: 20px;
+
+
+
+
+}
+
+#coluna-selecao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 10px 10px 10px;
+
+}
+
+
+#criar-ticket,
+#tickets-finalizados,
+#ticket-em-andamento,
+#historicos-de-tickets {
+
+    margin-top: 50px;
+    border: 4px solid rgba(0, 0, 0, 0.504);
+    border-radius: 20px;
+    height: 70px;
+    font-weight: bolder;
+    width: 260px;
+    font-size: 25px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+#criar-ticket:hover,
+#tickets-finalizados:hover,
+#ticket-em-andamento:hover,
+#historicos-de-tickets:hover {
+    background-color: rgb(233, 230, 230);
+}
+
+
+
+
+#icone-suporte {
+    display: flex;
+    margin-top: 110px;
+    margin-left: 10px;
+    align-items: flex-start;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#ticket-nao-encontrado {
+    display: flex;
+    justify-content: center;
+    margin-top: 325px
+}
+cantoesquerdo{
+}
