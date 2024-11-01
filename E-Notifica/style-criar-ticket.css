@@ -20,7 +20,7 @@
 
 /*Plano de fundo*/
 body {
-    background: url(imagens/uniamerica.jpg) no-repeat right top fixed;
+    background: url(Imagens/uniamerica.jpg) no-repeat right top fixed;
 
 
 }
@@ -93,19 +93,18 @@ body::before {
 #ticket-em-andamento,
 #historicos-de-tickets {
 
-    margin-top: 20px;
+    margin-top: 50px;
     border: 4px solid rgba(0, 0, 0, 0.504);
-    border-radius: 5px;
+    border-radius: 20px;
     height: 70px;
     font-weight: bolder;
     width: 260px;
-    font-size: 15px;
+    font-size: 25px;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    
-    background-color: aquamarine;
+    text-align: center;
 
 
 }
@@ -137,8 +136,8 @@ body::before {
     border: none;
     border-radius: 15px;
     padding: 7px;
-    color: #948a92;
-    font-size: 40px;
+    color: #948A8A;
+    font-size: 20px;
     width: 1107px;
     height: 60px;
     background-color: rgb(233, 230, 230);
@@ -154,7 +153,7 @@ body::before {
     border-bottom-right-radius: 0px;
     padding: 7px;
     color: #948A8A;
-    font-size: 25px;
+    font-size: 30px;
     width: 1107px;
 
     background-color: rgb(233, 230, 230);
@@ -229,15 +228,8 @@ body::before {
 }
 
 #salas {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 15px;
-    align-items: center;
-    background-color: gainsboro;
-    color: rgb(141, 4, 141);
-    width: 150px;
-    height: 40px;
-    font-weight: bold;
+    width: 90px;
+    height: 30px;
 }
 
 

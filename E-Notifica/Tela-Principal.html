@@ -1,75 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto notifica</title>
+    <title>Tela principal</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    
-    
+
+
     <header>
 
-        <div id = "logo">
-        <img src="Imagens/logo-dua.png" alt="" id="logo">
+        <div id="logo">
+            <img src="Imagens/logo-dua.png" alt="" id="logo">
         </div>
-        
+
 
 
     </header>
 
 
-<!--Esse CONTAINER é pra deixar o espaço-A do lado do espaço-B, sua div vai até linha 67-->
-    <div id = container>
-    
-    <div id ="espaço-A">
+    <!--Esse CONTAINER é pra deixar o espaço-A do lado do espaço-B, sua div vai até linha 67-->
+    <div id=container>
 
-        <div id = "criar-ticket">
+        <div id="espaço-A">
 
-            Criar Ticket
+
+            <div id="coluna-selecao">
+
+                <div id="criar-ticket">
+
+                    <p>Criar Ticket</p>
+
+
+                </div>
+
+                <div id="ticket-em-andamento">
+
+                    <p>Tickets em Andamentos</p>
+
+
+                </div>
+
+                <div id="tickets-finalizados">
+
+                    <p>Tickets Finalizados</p>
+
+
+                </div>
+
+                <div id="historicos-de-tickets">
+
+                    <p>Históricos de Tickets</p>
+
+
+                </div>
+
+
+
+                <div id="icone-suporte">
+
+                    <img src="Imagens/Icon-suporte.png" alt="" height="50px" width="50px">
+                    <p>suporte</p>
+
+
+                </div>
+
+
+
+            </div>
+
 
         </div>
 
-        <div id ="ticket-em-andamento">
 
-            Tickets em Andamentos
+        <div id="espaço-B">
 
-        </div>
-
-        <div id ="tickets-finalizados">
-
-            Tickets Finalizados
+            <div id="ticket-nao-encontrado">
+                <P>Não foi encontrado nenhum ticket</P>
+            </div>
 
         </div>
-
-        <div id = "historicos-de-tickets">
-
-            Históricos de Tickets
-
-        </div>
-        
-        <div id = "icone-suporte">
-
-            <img src="Imagens/Icon-suporte.png" alt="">
-            SUPORTE
-
-        </div>
-
 
     </div>
 
-    <div id = "espaço-B">
-
-    </div>
-    
-</div>
-    
-    <footer>
-
-
-
-    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

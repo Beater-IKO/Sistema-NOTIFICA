@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Tickets</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style-criar-ticket.css">
 
 </head>
 
@@ -15,7 +15,7 @@
     <header>
 
         <div id="logo">
-            <img src="imagens/logo-dua.png" alt="" id="logo">
+            <img src="Imagens/logo-dua.png" alt="" id="logo">
         </div>
 
 
@@ -33,25 +33,25 @@
 
                 <div id="criar-ticket">
 
-                    <p>Agente Responsável - 000000000 <br> Bloco - Limpeza</p>
+                    <p>Criar Ticket</p>
 
                 </div>
 
                 <div id="ticket-em-andamento">
 
-                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+                    <p>Tickets em Andamentos</p>
 
                 </div>
 
                 <div id="tickets-finalizados">
 
-                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+                    <p>Tickets Finalizados</p>
 
                 </div>
 
                 <div id="historicos-de-tickets">
 
-                    <p>Agente Responsável - 000000000 <br> Bloco - Exemplo</p>
+                    <p>Históricos de Tickets</p>
 
                 </div>
 
@@ -59,7 +59,7 @@
 
                 <div id="icone-suporte">
 
-                    <img src="imagens/Icon-suporte.png" alt="" height="50px" width="50px">
+                    <img src="Imagens/Icon-suporte.png" alt="" height="50px" width="50px">
                     <p>suporte</p>
 
 
@@ -77,7 +77,7 @@
 
         <div id="espaço-B">
 
-            <textarea placeholder="Piso Quebrado" name="texto-problema" id="texto-problema"></textarea>
+            <textarea placeholder="Digite aqui seu problema" name="texto-problema" id="texto-problema"></textarea>
 
 
             <div id="filtrar-opcoes">
@@ -108,10 +108,13 @@
 
 
             <section id="opcoes">
-                <div id="salas">
-                    <img src="imagens/sala-de-aula.png" alt="" width="30px" height="30px">
-                    <p> Sala 310</p>
-                </div>
+                <select name="salas" id="salas">
+                    <option value="sala1">Sala - 1</option>
+                    <option value="sala2">Sala - 2</option>
+                    <option value="sala3">Sala - 3</option>
+                    <option value="sala4">Sala - 4</option>
+                    <option value="sala5">Sala - 5</option>
+                </select>
 
                 <div id="interna" onclick="inflar(this)">
 
@@ -163,7 +166,7 @@
 
 
 
-            <textarea placeholder="O piso da sala de aula apresenta várias fissuras e buracos, o que tem se tornado um problema constante para os alunos e professores. Essa situação não apenas prejudica a estética do ambiente, mas também representa um risco de acidentes, especialmente para os mais jovens. Durante as aulas, é comum ver crianças desviando dos locais danificados, o que pode distrair a atenção e comprometer o aprendizado. Além disso, a manutenção inadequada do espaço reflete a falta de cuidado com o bem-estar dos estudantes. É essencial que a escola tome medidas para reparar o piso, garantindo um ambiente mais seguro e acolhedor para todos." name="texto-problema-detalhes"
+            <textarea placeholder="Digite aqui seu problema" name="texto-problema-detalhes"
                 id="texto-problema-detalhes"></textarea>
 
             <div id="interacao">

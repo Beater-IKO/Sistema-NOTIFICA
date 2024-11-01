@@ -10,21 +10,18 @@
 /*Logo*/
 #logo {
     display: flex;
-    width: 250px;
-    height: 100px;
+    width: 15vw;
+    height: 10vh;
     z-index: 2;
-    cursor: pointer;
 
 }
-
-
-/*Plano de fundo*/
-body {
-    background: url(Imagens/uniamerica.jpg) no-repeat right top fixed;
-
-
+#fundo{
+    z-index: 0;
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 100%;    
 }
-
 /*Isso serve pra deixar a mascara verde*/
 body::before {
 
@@ -36,8 +33,6 @@ body::before {
     bottom: 0;
     background-color: rgb(42, 254, 130, 0.5);
     z-index: 1;
-    height: 120%;
-
 }
 
 
@@ -54,6 +49,7 @@ a {
     margin-left: 2%;
     z-index: 2;
     position: relative;
+    height: 85vh;
 }
 
 #espaço-A {
@@ -62,7 +58,7 @@ a {
     background-color: white;
     border-radius: 20px;
     width: 300px;
-    height: 705px;
+    height:auto;
     margin-top: 3%;
 
 
@@ -75,13 +71,11 @@ a {
     flex-direction: column;
     background-color: white;
     border-radius: 20px;
-    width: 1120px;
-    height: auto;
-    height: 705px;
+    width: 80%;
+    height:auto;
     margin-top: 3%;
     margin-left: 20px;
-    justify-content: center;
-    justify-content: flex-start;
+
 
 
 
@@ -95,9 +89,9 @@ a {
 }
 
 
-#criar-ticket,
-#tickets-finalizados,
-#ticket-em-andamento,
+#Visualizarchamados,
+#Protocolos,
+#Historicodechamados,
 #historicos-de-tickets {
 
     margin-top: 50px;
@@ -116,9 +110,9 @@ a {
 
 }
 
-#criar-ticket:hover,
-#tickets-finalizados:hover,
-#ticket-em-andamento:hover,
+#Visualizarchamados:hover,
+#Protocolos:hover,
+#Historicodechamados:hover,
 #historicos-de-tickets:hover {
     background-color: rgb(233, 230, 230);
 }
@@ -139,4 +133,25 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 325px
+}
+.chamados{
+    background-color: #53FF8C;
+    height:auto;
+    font: normal 12pt Arial;
+    color: #9113FF;
+    font-weight: 600;
+
+}
+.linhasuperior{
+    display: flex;
+    color: black;
+    font-weight: normal;
+}
+.Usuariologo{
+    z-index: 2;
+    position: absolute;
+    right: 5vh;
+    top: 1vh;
+    display:flex;
+    width: 10vw;
 }
