@@ -59,7 +59,9 @@ img {
     z-index: 2;
     position: relative;
     height: 100px;
+    cursor: pointer;
 }
+
 
 #menuimg {
     margin-top: 25px;
@@ -248,4 +250,8 @@ label {
 #butaoEnviar {
     padding: 3pt;
     width: 75px;
+}
+
+#Suporte1{
+cursor: pointer;
 }
