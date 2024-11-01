@@ -32,3 +32,19 @@ document.getElementById('icone-suporte').addEventListener("click",function(){
 })
 
 
+
+
+let opcaoInflada = null;
+
+function inflar(interna) {
+    if (opcaoInflada) {
+        opcaoInflada.classList.remove('inflada');
+    }
+
+    if (interna !== opcaoInflada) {
+        interna.classList.add('inflada');
+        opcaoInflada = interna;
+    } else {
+        opcaoInflada = null; // se clicar na mesma, desfaz a inflada
+    }
+}
