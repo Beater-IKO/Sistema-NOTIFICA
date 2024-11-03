@@ -286,7 +286,7 @@ a {
 }
 
 .Descrição{
-    border-radius: 2%;
+    border-radius: 20px 20px 20px 20px;
     background-color: #E9E6E6;
     position: absolute;
     resize: none;
@@ -297,12 +297,15 @@ a {
     height:30vh;
     color: #B508FF;
     font: normal 12pt Arial;
+
 }
 .Imgpiso{
     height: 20vh;
     position: absolute;
     top: 50vh;
     left: 39vw;
+    border-radius: 20px 20px 20px;
+    border: 1px solid black;
 }
 .simularscroll{
     background-color:#c2c2c2 ;
@@ -320,3 +323,26 @@ a {
     top: 5.4vh;
     left: 33.6vw;
 }
+.Atualizaçãodestatus{
+display: flexbox;
+position: absolute;
+
+background-color:#df6f4d ;
+border-radius: 20px 20px 20px 20px;
+text-align: center;
+color: white;
+font: bold 14pt Arial;
+padding: 0.4%;
+}
+.checkbox {
+    transform: scale(2.5);
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;        
+    cursor: pointer;
+}
+.checkbox-wrapper{
+    width: 6px; 
+    height: 6px;
+     }
