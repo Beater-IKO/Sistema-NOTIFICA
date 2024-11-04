@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela principal</title>
+    <title>Notifica</title>
     <link rel="stylesheet" href="Ultimapg.css">
 
 </head>
 
 <body>
-
 
     <header>
 
@@ -54,7 +53,7 @@
 
                 <div id="icone-suporte">
 
-                    <img src="/E-Notifica/Imagens/Icon-suporte.png" alt="" height="50px" width="50px" style="position: absolute; top: 90%;">
+                    <img src="/E-Notifica/Imagens/Icon-suporte.png" height="50px"; width="50px"; style="position: absolute; top: 90%;">
 
                 </div>
 
@@ -68,34 +67,97 @@
         <div id="espaço-B">
 
             <div id="ticket-nao-encontrado">
-                <table border="1" style="position: absolute; top: 10vh;">
-                    <tr>
+                     <table border="0" style="position: absolute; top: 10vh;">
+                    <tr >
                     <th style="width: 15vw;"></th>
                     <th style="width: 60vw;"></th>
                 </tr>
                 <tr>
-                <td> 
+                    <td> 
                     <div class="chamados">
                         <div class="linhasuperior">
-                        <img  style="height: 3vh; margin: 1%;" src="/E-Notifica/Imagens/Person icon.png">
-                        <p style="margin: 3%;">Usuario 1- 000000</p>
+                    <img  style="height: 3vh; margin: 1%;" src="/E-Notifica/Imagens/Person icon.png">
+                    <p style="margin: 3%;">Usuario 1- 000000</p>
                     </div>
                         <p>Piso quebrado</p>
                         <p>Interno</p>
                         <p>Sala 310</p>
+                    <div style="display: flex;" class="Classificação">
+                        <img style="height: 5vh;" src="/E-Notifica/Imagens/triangulovermelho.png">
+                        <p>Urgencia</p>
                     </div>
+                </td>
+                <td class="seção2">
+                    <h1>Piso quebrado</h1>
                 </td>
                 </tr>
                 </table>
             </div>
-
+            <div class="sala">
+                <div class="salacirculo">
+                    <img style="height: 5vh;" src="/E-Notifica/Imagens/Salaicon.png">
+                </div>
+                <p>Sala 310</p>
+            </div>
+          <div class="Andartit">
+              <h4>Andar</h4>
+          </div>
+          <div class="Andar">
+            <h4>2 Andar</h4>
+          </div>
+          <div class="Áreadafaculdadetit">
+            <h4>
+                Area da faculdade
+            </h4>
+          </div>
+          <div class="Areadafaculdade"><h4>Interno</h4></div>
+          <div class="Graudeprioridadetit"><h4>Grau de prioridade</h4></div>
+          <div class="Graudeprioridade">
+            <img style="height: 5vh; position: absolute;" src="/E-Notifica/Imagens/triangulovermelho.png">
+            <h4>Urgencia</h4></div>
         </div>
+        <div class="Áreadedescrição">
+            <textarea disabled name="Descrição" class="Descrição">
+                O piso da sala de aula apresenta várias fissuras e buracos, o que tem se tornado um problema constante para os alunos e professores. 
+                Essa situação não apenas prejudica a estética do ambiente, mas também representa um risco de acidentes, especialmente para os mais jovens.
+                 Durante as aulas, é comum ver crianças desviando dos locais danificados, o que pode distrair a atenção e comprometer o aprendizado.
+                 Além disso, a manutenção inadequada do espaço reflete a falta de cuidado com o bem-estar dos estudantes. 
+                 É essencial que a escola tome medidas para reparar o piso, garantindo um ambiente mais seguro e acolhedor para todos.
+                </textarea>
+                <img class="Imgpiso" src="/E-Notifica/Imagens/pisoquebrado.jpeg" alt="">
+        </div>
+        <div style="position: absolute; top: 82.8%; left: 37%; " class="Atualizaçãodestatus">
+            <div class="checkbox-wrapper">
+            <input class="checkbox"  type="checkbox">
+        </div>
+            <img src="/ultimapagina/caderninho.png" style="height: 10vh;">
+            <p>Estou ciente!</p>
+        </div>  
+        <div style="position: absolute; top: 82.8%; left: 46%;" class="Atualizaçãodestatus">
+            <div class="checkbox-wrapper">
+                <input class="checkbox"  type="checkbox">
+            </div>
+                <img src="/ultimapagina/Trabalhandoicon.png" style="height: 10vh;">
+            <p>A Fazer!</p>
+        </div>
+        <div style="position: absolute; top: 82.8%; left: 56%;"   class="Atualizaçãodestatus">
+            <div class="checkbox-wrapper">
+                <input class="checkbox" type="checkbox">
+            </div>
+            <img src="/ultimapagina/CHECKLIST.png" style="height: 10vh;">
+            <p>Finalizado!</p>
+        </div>
+            
 
+
+
+        <div class="simularscroll">
+        </div>
+        <div class="scroll"></div>
     </div>
 
     <img id="fundo" src="/E-Notifica/Imagens/uniamerica.jpg" alt="">
     
     <script src="script.js"></script>
 </body>
-
 </html>
