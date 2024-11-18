@@ -14,8 +14,8 @@
 
 /*Plano de fundo*/
 body{
-    background: url(imagens/uniamerica.jpg) no-repeat right top fixed; 
-    
+    background: url(imagens/uniamerica.jpg) no-repeat right top fixed;
+    background-attachment: fixed;
 
 }   
 
