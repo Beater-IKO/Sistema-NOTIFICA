@@ -250,3 +250,8 @@ select:focus {
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
+
+#criar-ticket, #ticket-em-andamento, #tickets-finalizados,#historicos-de-tickets, #verificar-protocolos 
+{
+    text-decoration: none;
+}
