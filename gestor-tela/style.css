@@ -14,8 +14,8 @@
 
 /*Plano de fundo*/
 body{
-    background: url(imagens/uniamerica.jpg) no-repeat right top fixed; 
-    
+    background: url(imagens/uniamerica.jpg) no-repeat right top fixed;
+    background-attachment: fixed;
 
 }   
 
@@ -249,4 +249,9 @@ select:focus {
     margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
+}
+
+#criar-ticket, #ticket-em-andamento, #tickets-finalizados,#historicos-de-tickets, #verificar-protocolos 
+{
+    text-decoration: none;
 }
