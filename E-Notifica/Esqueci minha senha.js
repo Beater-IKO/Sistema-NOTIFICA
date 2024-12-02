@@ -8,7 +8,7 @@ function confirmar () {
 }
 
 document.getElementById('acessar').addEventListener("click",function(){ // Função que abre outro html baseado no click 
-  window.location.href = "Tela-Principal.html" 
+  window.location.href = "Tela-Login-Estudante.html" 
 })
 
 document.getElementById('voltar').addEventListener("click",function(){ // Função que abre outro html baseado no click

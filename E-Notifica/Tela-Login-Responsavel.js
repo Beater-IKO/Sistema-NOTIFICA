@@ -14,3 +14,7 @@ function confirmar () {
   document.getElementById('registrar').addEventListener("click",function(){
     window.location.href = "Tela-Registro.html"
   })
+
+  document.getElementById('esqueciSenha').addEventListener("click",function(){
+    window.location.href = "Esqueci minha senha.html"
+  })

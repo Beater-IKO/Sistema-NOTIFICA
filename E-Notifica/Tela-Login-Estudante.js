@@ -14,3 +14,7 @@ document.getElementById('registrar').addEventListener("click",function(){ // Mud
 document.getElementById('acessoResponsavel').addEventListener("click",function(){ // Muda de tela quando clica no acesso resposavel
   window.location.href = "Tela-Login-Responsavel.html"
 })
+
+document.getElementById('esqueciSenha').addEventListener("click", function(){
+  window.location.href = "Esqueci minha senha.html"
+})
