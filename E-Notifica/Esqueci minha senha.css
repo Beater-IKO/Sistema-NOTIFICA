@@ -1,0 +1,169 @@
+* { /* Tira toda a margem, padding e o box-sizing da tela */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo { /* Dimensões da imagem de Logo da faculdade */
+    width: 200px; 
+    height: 75px;
+}
+
+#imagem-fundo { /* Imagem de Fundo da faculdade */
+    background-image: url(Imagens/uniamerica.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    /* Alterado para ocupar a largura total da tela */
+    background-position: center;
+}
+
+#imagem-fundo::before { /* Imagem de fundo com o fundo verde */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 247, 41, 0.5);
+    z-index: 1;
+}
+
+#centro { /* Texto central */
+    z-index: 2;
+    position: relative;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagem-logo { /* Posição da logo */
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+
+#caixa { /* Caixa é o centro da tela onde fica todos os inputs */
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background: #d5d5d5;
+    border: 1pt solid black;
+    border-top-left-radius: 5pt;
+    border-top-right-radius: 5pt;
+    border-bottom-left-radius: 2pt;
+    border-bottom-right-radius: 2pt;
+}
+
+#titulo,
+#subtitulo { /* Texto do centro e o outro é um texto explicativo */
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    background: white;
+    border-left: 0.5pt solid black;
+    border-right: 0.5pt solid black;
+    text-align: center;
+    padding-top: 10pt;
+}
+
+#subtitulo { /* Texto Justifica */
+    text-align: justify;
+}
+
+#formulario { /* Div dos inputs serve igual um form */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    border-width: 0 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top: 10pt;
+}
+
+#ra,
+#E-mail,
+#cpf { /* Adição de bordas no input */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#formulario input { /* Seleção geral de inputs dentro da div formulario */
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: #D9D9D9;
+    border: 0;
+}
+
+input#acessar { /* Input acessar */
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    background-color: #0DB007;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+
+input#acessar:hover { /* Muda o estilo enquanto o mouse estiver em cima */
+    background-color: #0c9908;
+}
+
+input#voltar { /* Input com o id voltar */
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: #17A2B8;
+    border: 1px solid #17A2B8;
+}
+
+input#voltar:hover { /* Muda o estilo enquanto o mouse estiver em cima */
+    color: white;
+    background-color: #17A2B8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: white;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    border-bottom-left-radius: 5pt;
+    border-bottom-right-radius: 5pt;
+    padding-bottom: 10pt;
+}
+
+footer label {
+    text-align: left;
+}
+
+#acesso {
+    padding-bottom: 7pt;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 29pt;
+    height: 22pt;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: rgba(128, 128, 128, 0.575);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.input-content {
+    display: flex;
+    width: 380px;
+}

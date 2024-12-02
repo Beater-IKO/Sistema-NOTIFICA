@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     font-family: "Varela Round", sans-serif;
 }
 
@@ -13,7 +14,7 @@ body {
     background-image: url(Imagens/uniamerica.jpg);
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
 }
 
 #ImagemFundo::before {
@@ -23,6 +24,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100vw;
     height: 100vh;
     background-color: rgba(0, 247, 41, 0.5);
     z-index: 1;
@@ -30,97 +32,49 @@ body {
 
 header {
     background-color: black;
-    height: 80px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
     padding: 0px 0px 0px 0px;
 }
 
 #cima {
     background-color: black;
-    height: 80px;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
     padding: 0px;
 }
 
 #sla {
-    background-color: black;
-    color: white;
-    width: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 15px;
     align-items: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
     z-index: 2;
-    position: relative;
     height: 100px;
     cursor: pointer;
 }
 
-
-#menuimg {
-    margin-top: 25px;
-    border: 5px;
-    height: 30px;
-    width: 40px;
-    float: left;
-}
-
-#menu {
-    display: none;
-    /* Oculta o menu inicialmente */
-    position: absolute;
-    margin: 0px;
-    background-color: #8a0cff;
-    color: cyan;
-    margin-top: 80px;
-    height: 70px;
-    width: 300px;
-}
-
-#menu-button {
-    cursor: pointer;
-    margin-left: 40px;
-    position: absolute;
-    height: 80px;
-    width: 70px;
-    left: 0px;
-    background-color: black;
-    color: cyan;
-    border: 0px;
-    font-weight: 800;
-    font-size: large;
-}
-
-#menu.open {
-    display: block;
-    /* Exibe o menu quando a classe "open" é adicionada */
-}
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-#suporteMenu {
-    background-color: #8a0cff00;
-    border: 0px;
-    font-size: 24px;
-    font-weight: bolder;
-    margin-top: 10px;
-    color: black;
-    cursor: pointer;
+#Nome {
+    position: flex;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding-bottom: 10px;
+    height: 50px;
 }
 
 #corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: #20055300;
-    width: 100%;
-    min-width: 300px;
-    max-width: 100%;
     margin: auto;
-    width: 1000px;
     z-index: 2;
     position: relative;
 }
@@ -129,6 +83,7 @@ a {
     background-color: black;
     color: rgb(255, 255, 255);
     display: flex;
+    width: 100vw;
     justify-content: flex-start;
     align-items: center;
     font-size: 11px;
@@ -143,14 +98,6 @@ a {
     height: 40px;
 }
 
-#Nome {
-    position: flex;
-    width: 100%;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    padding-bottom: 10px;
-    height: 50px;
-}
 
 #Nome h1 {
     display: flex;
@@ -164,10 +111,9 @@ a {
 
 #caixa {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgba(0, 0, 0, 0.226);
-    width: 1000px;
-    height: 520px;
-    margin: 10pt;
 }
 
 #seletor {
@@ -180,6 +126,8 @@ a {
 #infoproblema,
 #problema {
     display: flex;
+    justify-content: center;
+    align-self: start;
 }
 
 #infoproblema {
@@ -193,13 +141,9 @@ a {
     font-family: Arial;
     outline: none;
     border: 1px solid #333;
+    width: 100%;
+    height: 150px;
     resize: none;
-    min-height: 270px;
-    min-width: 950px;
-    margin: 10pt;
-    margin-top: 10pt;
-    margin-bottom: 10pt;
-    justify-content: start;
 }
 
 option {
@@ -213,7 +157,10 @@ span {
 }
 
 form {
-    padding-top: 10pt;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 900pt;
 }
 
 label {
@@ -231,16 +178,17 @@ label {
 }
 
 #botao-arquivo {
-    padding: 3pt;
+    padding-top: 10pt;
     width: 110px;
+    height: 110px;
 }
 
 #botao {
     display: flex;
     justify-content: end;
+    padding-right: 10px;
+    padding-bottom: 10px;
     height: 35px;
-    width: 965px;
-    margin-left: 13pt;
 }
 
 #butaoEnviar {
