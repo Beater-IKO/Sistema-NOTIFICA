@@ -58,8 +58,6 @@ a {
 
 #espaço-B {
     box-shadow: 15px 20px #daede4;
-    display: inline-block;
-    flex-direction: column;
     background-color: white;
     border-radius: 20px;
     width: 80%;
@@ -111,5 +109,51 @@ a {
     right: 5vh;
     top: 1vh;
     display: flex;
-    width: 10vw;
+    width: 12vw;
+}
+
+.Tickectusuario {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 13vw;
+    border-radius: 5px;
+    margin: 1%;
+    max-height: 70vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.TickectSuperior {
+    display: flex;
+    align-items: center;
+}
+
+.TickectInferior {
+    margin-top: 4%;
+    font: bold 10pt Arial;
+    color: #9113FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.CategoriaUrgencia {
+    display: flex; 
+    margin-left: 5vw;
+    margin-top: -2vh;
+    color: black;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 30px;
+}
+
+.TicketGeral {
+    background-color: #53FF8C;
+    margin-top: 3%;
+}
+.Quadroinformações{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
 }
