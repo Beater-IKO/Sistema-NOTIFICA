@@ -1,159 +1,241 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Logo */
 #logo {
-    display: flex;
-    width: 15vw;
-    height: 10vh;
-    z-index: 2;
+  display: flex;
+  width: 15vw;
+  height: 10vh;
+  z-index: 2;
 }
 
 #fundo {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Máscara verde */
 body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(42, 254, 130, 0.5);
-    z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(42, 254, 130, 0.5);
+  z-index: 1;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Container */
 #container {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2%;
-    z-index: 2;
-    position: relative;
-    height: 85vh;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2%;
+  z-index: 2;
+  position: relative;
+  height: 85vh;
 }
 
 #espaço-A {
-    display: inline-block;
-    background-color: white;
-    border-radius: 20px;
-    width: 300px;
-    height: auto;
-    margin-top: 3%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  margin-top: 3%;
 }
 
 #espaço-B {
-    box-shadow: 15px 20px #daede4;
-    background-color: white;
-    border-radius: 20px;
-    width: 80%;
-    height: auto;
-    margin-top: 3%;
-    margin-left: 20px;
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  box-shadow: 15px 20px #daede4;
+  background-color: white;
+  border-radius: 20px;
+  width: 80%;
+  height: auto;
+  margin-top: 3%;
+  margin-left: 20px;
 }
 
 #coluna-selecao {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #Visualizarchamados,
 #Protocolos,
 #Historicodechamados {
-    margin-top: 50px;
-    border: 4px solid rgba(0, 0, 0, 0.504);
-    border-radius: 20px;
-    height: 70px;
-    font-weight: bolder;
-    width: 260px;
-    font-size: 25px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
+  margin-top: 50px;
+  border: 4px solid rgba(0, 0, 0, 0.504);
+  border-radius: 20px;
+  height: 70px;
+  font-weight: bolder;
+  width: 260px;
+  font-size: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
 }
 
 #Visualizarchamados:hover,
 #Protocolos:hover,
 #Historicodechamados:hover {
-    background-color: rgb(233, 230, 230);
+  background-color: rgb(233, 230, 230);
 }
 
 #icone-suporte {
-    display: flex;
-    margin-top: 110px;
-    margin-left: 10px;
-    align-items: flex-start;
-    font-weight: bolder;
-    cursor: pointer;
+  display: flex;
+  margin-top: 110px;
+  margin-left: 10px;
+  align-items: flex-start;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .Usuariologo {
-    z-index: 2;
-    position: absolute;
-    right: 5vh;
-    top: 1vh;
-    display: flex;
-    width: 12vw;
+  z-index: 2;
+  position: absolute;
+  right: 5vh;
+  top: 1vh;
+  display: flex;
+  width: 12vw;
 }
 
 .Tickectusuario {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 13vw;
-    border-radius: 5px;
-    margin: 1%;
-    max-height: 70vh;
-    overflow-y:scroll;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 13vw;
+  border-radius: 5px;
+  margin: 1%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
 .TickectSuperior {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .TickectInferior {
-    margin-top: 4%;
-    font: bold 10pt Arial;
-    color: #9113FF;
-    display: flex;
-    flex-direction: column;
+  margin-top: 4%;
+  font: bold 10pt Arial;
+  color: #9113ff;
+  display: flex;
+  flex-direction: column;
 }
 
 .CategoriaUrgencia {
-    display: flex; 
-    margin-left: 5vw;
-    margin-top: -2vh;
-    color: black;
-    font-weight: bold;
-    background-color: red;
-    border-radius: 30px;
+  display: flex;
+  margin-left: 5vw;
+  margin-top: -2vh;
+  color: black;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 30px;
 }
 
 .TicketGeral {
-    background-color: #53FF8C;
-    margin-top: 3%;
+  background-color: #53ff8c;
+  margin-top: 3%;
 }
-.Quadroinformações{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction: column;
+.Quadroinformações h1 {
+  background-color: #e9e6e6;
+  width: 60vw;
+  margin-top: 2%;
+  padding: 1.5%;
+  color: #9113ff;
+  border-radius: 20px;
+}
+.Sala {
+  margin-top: 2%;
+  height: 5vh;
+  padding: 0.5%;
+  display: flex;
+  background-color: #e9e6e6;
+  color: #9113ff;
+  font: bold 16pt Arial;
+  width: 8vw;
+  border-radius: 20px;
+}
+.Sala p {
+  padding-top: 8%;
+  padding-left: 2%;
+}
+.Subinformações {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+.Andar p {
+  margin-top: 5%;
+  font: bold 16pt Arial;
+  padding: 10%;
+  width: 5vw;
+  border-radius: 20px;
+  text-align: center;
+}
+.AreadaFaculdade p {
+  margin-top: 5%;
+  font: bold 16pt Arial;
+  padding: 5%;
+  width: 10vw;
+  border-radius: 20px;
+  text-align: center;
+}
+.Graudeprioridade p {
+  margin-top: 5%;
+  font: bold 16pt Arial;
+  padding: 4%;
+  width: 11vw;
+  border-radius: 20px;
+  text-align: center;
+}
+.Descrição {
+  margin-top: 2%;
+  background-color: #e9e6e6;
+  border-radius: 20px;
+  padding: 2%;
+}
+#Descriçãotxt {
+  color: #b508ff;
+  font: normal 16pt Arial;
+  resize: none;
+  width: 58vw;
+  height: 20vh;
+  background-color: transparent;
+  border-color: transparent;
+}
+.Statuschamado {
+  display: flex;
+  justify-content: flex-start;
+}
+.Cheklist {
+  margin-left: 5%;
+  font: normal 15pt Arial;
+  border-radius: 10px;
+  margin-top: 1%;
+  padding: 1%;
+  background-color: #ff3c00;
+  width: 6.2vw;
+}
+input[type="checkbox"] {
+  width: 25px; /* Largura */
+  height: 25px; /* Altura */
+  cursor: pointer;
 }
