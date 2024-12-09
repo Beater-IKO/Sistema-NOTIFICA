@@ -17,7 +17,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 /* Máscara verde */
@@ -30,6 +30,7 @@ body::before {
   bottom: 0;
   background-color: rgb(42, 254, 130, 0.5);
   z-index: 1;
+  height: 120vh;
 }
 
 a {
@@ -44,7 +45,7 @@ a {
   margin-left: 2%;
   z-index: 2;
   position: relative;
-  height: 85vh;
+  height: auto;
 }
 
 #espaço-A {
@@ -70,6 +71,7 @@ a {
 }
 
 #coluna-selecao {
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -118,10 +120,10 @@ a {
 .Tickectusuario {
   display: flex;
   flex-direction: column;
-  width: 13vw;
+  width: 14vw;
   border-radius: 5px;
   margin: 1%;
-  max-height: 70vh;
+  max-height: 110vh;
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 1;
@@ -156,7 +158,7 @@ a {
 }
 .Quadroinformações h1 {
   background-color: #e9e6e6;
-  width: 60vw;
+  width: auto;
   margin-top: 2%;
   padding: 1.5%;
   color: #9113ff;
@@ -164,13 +166,13 @@ a {
 }
 .Sala {
   margin-top: 2%;
-  height: 5vh;
+  height: 7vh;
   padding: 0.5%;
   display: flex;
   background-color: #e9e6e6;
   color: #9113ff;
   font: bold 16pt Arial;
-  width: 8vw;
+  width: 7vw;
   border-radius: 20px;
 }
 .Sala p {
