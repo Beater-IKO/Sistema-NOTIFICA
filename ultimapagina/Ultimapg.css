@@ -30,7 +30,7 @@ body::before {
   bottom: 0;
   background-color: rgb(42, 254, 130, 0.5);
   z-index: 1;
-  height: 120vh;
+  height: 111vh;
 }
 
 a {
@@ -91,6 +91,10 @@ a {
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #Visualizarchamados:hover,
@@ -156,6 +160,7 @@ a {
   background-color: #53ff8c;
   margin-top: 3%;
 }
+
 .Quadroinformações h1 {
   background-color: #e9e6e6;
   width: auto;
@@ -164,6 +169,7 @@ a {
   color: #9113ff;
   border-radius: 20px;
 }
+
 .Sala {
   margin-top: 2%;
   height: 7vh;
@@ -175,15 +181,18 @@ a {
   width: 7vw;
   border-radius: 20px;
 }
+
 .Sala p {
   padding-top: 8%;
   padding-left: 2%;
 }
+
 .Subinformações {
   margin-top: 3%;
   display: flex;
   justify-content: space-around;
 }
+
 .Andar p {
   margin-top: 5%;
   font: bold 16pt Arial;
@@ -192,6 +201,7 @@ a {
   border-radius: 20px;
   text-align: center;
 }
+
 .AreadaFaculdade p {
   margin-top: 5%;
   font: bold 16pt Arial;
@@ -200,6 +210,7 @@ a {
   border-radius: 20px;
   text-align: center;
 }
+
 .Graudeprioridade p {
   margin-top: 5%;
   font: bold 16pt Arial;
@@ -208,12 +219,14 @@ a {
   border-radius: 20px;
   text-align: center;
 }
+
 .Descrição {
   margin-top: 2%;
   background-color: #e9e6e6;
   border-radius: 20px;
   padding: 2%;
 }
+
 #Descriçãotxt {
   color: #b508ff;
   font: normal 16pt Arial;
@@ -223,10 +236,12 @@ a {
   background-color: transparent;
   border-color: transparent;
 }
+
 .Statuschamado {
   display: flex;
   justify-content: flex-start;
 }
+
 .Cheklist {
   margin-left: 5%;
   font: normal 15pt Arial;
@@ -236,8 +251,11 @@ a {
   background-color: #ff3c00;
   width: 6.2vw;
 }
+
 input[type="checkbox"] {
-  width: 25px; /* Largura */
-  height: 25px; /* Altura */
+  width: 25px;
+  /* Largura */
+  height: 25px;
+  /* Altura */
   cursor: pointer;
 }

@@ -214,3 +214,11 @@ function inflarurgencia(grauurgencia) {
     }
 }
 
+
+
+
+function atualizarContador() {
+    let textarea = document.getElementById("texto-problema");
+    let contador = document.getElementById("contador");
+    contador.textContent = `${textarea.value.length}/100`;
+}

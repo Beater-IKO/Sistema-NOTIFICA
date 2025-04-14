@@ -16,6 +16,7 @@
     cursor: pointer;
 
 }
+
 .Usuariologo {
     z-index: 2;
     position: absolute;
@@ -23,7 +24,7 @@
     top: 1vh;
     display: flex;
     width: 12vw;
-  }
+}
 
 /*Plano de fundo*/
 body {
@@ -137,49 +138,59 @@ body::before {
     cursor: pointer;
 }
 
+#texto {
+    display: flex;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 7px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1107px;
+    height: 30px;
+    background-color: rgb(233, 230, 230);
+    align-items: center;
+}
+
+
 #texto-problema {
     display: flex;
     resize: none;
-    border: none;
+
     border-radius: 15px;
     padding: 7px;
     color: #948A8A;
-    font-size: 20px;
-    width: 1107px;
-    height: 60px;
+    font-size: 15px;
     background-color: rgb(233, 230, 230);
+    height: 70px;
+    width: 330px;
+
 }
 
-
-#texto-problema-detalhes {
-    display: flex;
-    resize: none;
-    border: none;
-    border-radius: 15px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    padding: 7px;
-    color: #948A8A;
-    font-size: 30px;
-    width: 1107px;
-
-    background-color: rgb(233, 230, 230);
-    margin-top: 110px;
-    height: 253px;
-
+#contador {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 8px;
+    right: 15px;
 }
+
 
 #enviar {
     background-color: rgb(36, 126, 245);
     color: white;
     height: 40px;
     width: 95px;
+
     font-size: large;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 550px;
+    margin-top: -10px;
 
 
 }
@@ -411,6 +422,48 @@ body::before {
 #galeria-de-fotos {
     display: flex;
     border-radius: 30px;
+    background-color: rgb(233, 230, 230);
+    cursor: pointer;
+    justify-content: right;
+}
+
+#auxiliarIcones {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha à direita */
+    gap: 15px;
+    /* Espaço entre os ícones */
+    margin-right: 20px;
+    /* Ajuste conforme necessário */
+    align-items: center;
+}
+
+#auxiliarIcones img {
+    border-radius: 30px;
     background-color: white;
     cursor: pointer;
+    padding: 5px;
+    /* Opcional, para espaçamento interno */
+    width: 50px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 50px;
+}
+
+
+.formulario {
+    display: flex;
+
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 20px;
+
+}
+
+#problemas,
+#subProblemas {
+    font-weight: bolder;
+    font-size: 15px;
+    background-color: rgb(233, 230, 230);
+
+
 }

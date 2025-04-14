@@ -16,14 +16,11 @@
 
         <div id="logo">
             <img src="Imagens/logo-dua.png" alt="" id="logo">
-        </div>  
+        </div>
         <div class="Usuariologo">
-            <img
-              style="height: 5vh; margin: 5%"
-              src="/E-Notifica/Imagens/Person icon.png"
-            />
-            <p style="margin-top: 15%">Agente - 000000</p>
-          </div>
+            <img style="height: 5vh; margin: 5%" src="/E-Notifica/Imagens/Person icon.png" />
+            <p style="margin-top: 15%">Usuário - 000000</p>
+        </div>
 
 
 
@@ -84,7 +81,7 @@
 
         <div id="espaço-B">
 
-            <textarea placeholder="Digite aqui seu problema" name="texto-problema" id="texto-problema"></textarea>
+            <div id="texto">Escolha as categorias baseado no problema, localização e imagens.</div>
 
 
             <div id="filtrar-opcoes">
@@ -170,18 +167,55 @@
 
 
 
+            <div class="formulario">
+
+                Qual é o tipo problema:
+
+
+                <select name="" id="problemas">
+                    <option value="none"></option>
+                    <option value="problema1">ar condicionado</option>
+
+                </select>
 
 
 
-            <textarea placeholder="Digite aqui seu problema" name="texto-problema-detalhes"
-                id="texto-problema-detalhes"></textarea>
+            </div>
 
-            <div id="interacao">
-                <button type="button" id="enviar">Enviar</button>
+
+
+            <div class="formulario">
+
+                Qual o subtipo do problema:
+
+
+                <select name="" id="subProblemas">
+                    <option value="none"></option>
+                    <option value="subproblema1">Barulho Alto</option>
+                    <option value="subproblema2">Afiação</option>
+                    <option value="subproblema3">Goteira</option>
+                </select>
+
+
+
+            </div>
+
+            <div class="formulario">
+                <textarea placeholder="Digite aqui uma breve detalhamento do problema" name="texto-problema"
+                    id="texto-problema" maxlength="100" minlength="6" oninput="atualizarContador()"></textarea>
+                <span id="contador">0/100</span>
+            </div>
+
+
+            <div id="auxiliarIcones">
                 <img src="Imagens/microfone-icone.png" alt="microfone" height="65px" id="microfone-icone">
                 <img src="Imagens/google-assistente.png" alt="googleassistente" height="65px" id="google-assistente">
                 <img src="Imagens/galeria-de-fotos.png" alt="galeriadefotos" height="65px" id="galeria-de-fotos">
             </div>
+
+            <button type="button" id="enviar">Enviar</button>
+
+
 
 
         </div>

@@ -16,6 +16,7 @@
     cursor: pointer;
 
 }
+
 .Usuariologo {
     z-index: 2;
     position: absolute;
@@ -23,7 +24,7 @@
     top: 1vh;
     display: flex;
     width: 12vw;
-  }
+}
 
 /*Plano de fundo*/
 body {
@@ -146,4 +147,11 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 325px
+}
+
+
+#textoProblema {
+    display: flex;
+    font-weight: bolder;
+    color: blanchedalmond
 }
