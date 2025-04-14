@@ -1,3 +1,5 @@
+
+/*Abrir outras telas htmls*/
 document.getElementById('logo').addEventListener("click",function(){
 
     location.href = "Tela-Principal.html"
@@ -47,6 +49,7 @@ document.getElementById('icone-suporte').addEventListener("click",function(){
 
 
 
+/*Tudo isso serve para inflar os botões*/
 let opcaoInflada = null;
 let opcaoInfladaAndar = null;
 let opcaoInfladaGrau = null;
@@ -147,7 +150,7 @@ function inflarAndar(andar4) {
 
 
 
-//
+//-----------------------------------
 
 
 function inflarGrau(grauleve) {

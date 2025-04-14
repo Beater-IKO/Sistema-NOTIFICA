@@ -64,6 +64,7 @@ a {
     position: relative;
 }
 
+/*Espaço em branco da esquerda*/
 #espaço-A {
     display: flex;
     display: inline-block;
@@ -103,6 +104,7 @@ a {
 }
 
 
+/*Opções*/
 #criar-ticket,
 #tickets-finalizados,
 #ticket-em-andamento,
